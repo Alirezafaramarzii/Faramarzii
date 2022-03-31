@@ -1,10 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "IRANSansWeb";
+  src: url("./font/IRANSansWeb.ttf");
+  src: url("./font/IRANSansWeb_Black.ttf");
+  src: url("./font/IRANSansWeb_Bold.ttf");
+  src: url("./font/IRANSansWeb_Light.ttf");
+  src: url("./font/IRANSansWeb_Medium.ttf");
+  src: url("./font/IRANSansWeb_UltraLight.ttf");
+}
+
+:root {
+  /* ------main colors----- */
+  --Black: #070707;
+  --Blue: #628EE0;
+  --Purple: #7562E0;
+  --White: #FFFFFF;
+  --background-body: #030E21;
+
+  /* ------Other colors----- */
+  --F9F9F9: #F9F9F9;
+  --CBCBCB: #CBCBCB;
+  --EDEDED: #EDEDED;
+  --757575: #757575;
+
+  --Purple-01: #EEEBFB;
+  --Purple-02: #9889E8;
+  --Purple-03: #5740D9;
+  --Purple-04: #201465;
+
+  --Blue-01: #EBF1FB;
+  --Blue-01: #89AAE8;
+  --Blue-01: #4076D9;
+  --Blue-01: #143065;
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "IRANSansWeb";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 24px 104px;
+  background-color: var(--background-body);
 }
 
 code {

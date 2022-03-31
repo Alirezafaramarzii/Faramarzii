@@ -1,9 +1,10 @@
 import './App.css';
+import MainLayout from './components/Layouts/MainLayout';
 
 function App() {
   return (
     <div className="App">
-      start faramarzi v1
+      <MainLayout />
     </div>
   );
 }
