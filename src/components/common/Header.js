@@ -10,6 +10,7 @@ const Header = () => {
     return (
         <div className='navbar navbar-expand navbar-desktop'>
             <div className='navbar-right'>
+
                 <a class="navbar-brand" href="#">
                     <img className='logo' src={Faramarzi} alt="" />
                 </a>
