@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-// img
+// component
 import Introduction from './Introduction/Introduction';
 import Product from './Product/Product';
 import Profile from './Profile/Profile';
+import Certificates from './Certificates/Certificates';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Introduction />
             <Profile />
             <Product/>
+            <Certificates/>
         </div>
     );
 };
