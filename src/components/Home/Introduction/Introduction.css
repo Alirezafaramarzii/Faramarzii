@@ -1,0 +1,63 @@
+.Introduction {
+    margin: 56px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ----------------------------------- */
+
+.Introduction .text {
+    text-align: justify;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.Introduction .text a {
+    color: var(--Purple);
+}
+
+.Introduction .text a svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ----------------------------------- */
+
+
+.Introduction .img {
+    position: relative;
+}
+
+.Introduction .img img {
+    width: 400;
+    height: 450px;
+}
+
+
+
+.Introduction .img .hide-bottom-img {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    bottom: -1px;
+    background-color: var(--background-body);
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .Introduction .img img {
+        width: 320;
+        height: 370px;
+    }
+
+
+    .Introduction .img .hide-bottom-img {
+        height: 123px;
+    }
+
+
+}

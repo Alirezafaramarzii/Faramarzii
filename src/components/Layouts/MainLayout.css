@@ -3,4 +3,19 @@
     top: -34px;
     right: -20px;
     z-index: -1;
+    width: 1053px;
+    height: 594px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .vector1 {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        z-index: -1;
+        width: 350px;
+        height: 230px;
+    }
+
 }

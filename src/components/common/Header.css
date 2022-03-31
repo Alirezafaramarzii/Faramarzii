@@ -39,9 +39,9 @@
 
 .nav-link {
     color: var(--F9F9F9);
-    font-size: 18px;
-    font-family: "IRANSansWeb";
-    font-weight: lighter;
+    font-size: 16px;
+    font-family: "IRANSansWeb_Light";
+    color: var(--text-color2);
     text-align: right;
 }
 

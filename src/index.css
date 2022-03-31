@@ -7,10 +7,30 @@
 @font-face {
   font-family: "IRANSansWeb";
   src: url("./font/IRANSansWeb.ttf");
-  src: url("./font/IRANSansWeb_Black.ttf");
+}
+
+@font-face {
+  font-family: "IRANSansWeb_Bold";
   src: url("./font/IRANSansWeb_Bold.ttf");
+}
+
+@font-face {
+  font-family: "IRANSansWeb_Black";
+  src: url("./font/IRANSansWeb_Black.ttf");
+}
+
+@font-face {
+  font-family: "IRANSansWeb_Light";
   src: url("./font/IRANSansWeb_Light.ttf");
+}
+
+@font-face {
+  font-family: "IRANSansWeb_Medium";
   src: url("./font/IRANSansWeb_Medium.ttf");
+}
+
+@font-face {
+  font-family: "IRANSansWeb_UltraLight";
   src: url("./font/IRANSansWeb_UltraLight.ttf");
 }
 
@@ -21,6 +41,9 @@
   --Purple: #7562E0;
   --White: #FFFFFF;
   --background-body: #030E21;
+  --text-color: #F9F9F9;
+  --text-color2: #EDEDED;
+
 
   /* ------Other colors----- */
   --F9F9F9: #F9F9F9;
@@ -41,12 +64,132 @@
 }
 
 body {
-  margin: 0;
   font-family: "IRANSansWeb";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 24px 104px;
+  padding: 24px 0;
   background-color: var(--background-body);
+  overflow-x: hidden;
+}
+
+
+
+h1 {
+  font-size: 44px;
+  font-family: "IRANSansWeb_Bold";
+  color: var(--text-color);
+  margin: 0 0 20px 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "IRANSansWeb_Bold";
+  color: var(--text-color);
+}
+
+h3 {
+  font-size: 32px;
+  font-family: "IRANSansWeb_Bold";
+  color: var(--text-color);
+
+}
+
+h4 {
+  font-size: 24px;
+  font-family: "IRANSansWeb_Bold";
+  color: var(--text-color);
+
+}
+
+h5 {
+  font-size: 20px;
+  font-family: "IRANSansWeb_Bold";
+  color: var(--text-color);
+
+}
+
+h6 {
+  font-size: 16px;
+  font-family: "IRANSansWeb_Bold";
+  color: var(--text-color);
+
+}
+
+.text-body-xl {
+  font-size: 20px;
+  font-family: "IRANSansWeb";
+  color: var(--text-color2);
+
+}
+
+.text-body-lg {
+  font-size: 18px;
+  font-family: "IRANSansWeb_Light";
+  color: var(--text-color2);
+
+}
+
+.text-body-md {
+  font-size: 16px;
+  font-family: "IRANSansWeb";
+  color: var(--text-color2);
+
+}
+
+.text-body-sm {
+  font-size: 14px;
+  font-family: "IRANSansWeb_Light";
+  color: var(--text-color2);
+
+}
+
+.text-body-xs {
+  font-size: 14px;
+  font-family: "IRANSansWeb_Light";
+  color: var(--text-color2);
+
+}
+
+.text-caption-lg {
+  font-size: 14px;
+  font-family: "IRANSansWeb_Medium";
+  color: var(--text-color2);
+
+}
+
+.text-caption-md {
+  font-size: 12px;
+  font-family: "IRANSansWeb_Medium";
+  color: var(--text-color2);
+
+}
+
+.text-button-lg {
+  font-size: 16px;
+  font-family: "IRANSansWeb";
+  color: var(--text-color2);
+
+}
+
+.text-button-sm {
+  font-size: 14px;
+  font-family: "IRANSansWeb_Medium";
+  color: var(--text-color2);
+
+}
+
+.text-overLine-lg {
+  font-size: 14px;
+  font-family: "IRANSansWeb_Medium";
+  color: var(--text-color2);
+
+}
+
+.text-button-md {
+  font-size: 12px;
+  font-family: "IRANSansWeb_Medium";
+  color: var(--text-color2);
+
 }
 
 code {
