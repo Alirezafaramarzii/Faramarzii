@@ -7,6 +7,17 @@
     height: 594px;
 }
 
+.vector2 {
+    position: absolute;
+    opacity: 0.7;
+    top: 500px;
+    left: -20px;
+    z-index: -1;
+    width: 567px;
+    height: 1084px;
+}
+
+
 @media only screen and (max-width: 1200px) {
 
     .vector1 {
@@ -16,6 +27,16 @@
         z-index: -1;
         width: 350px;
         height: 230px;
+    }
+
+    .vector2 {
+        position: absolute;
+        opacity: 0.7;
+        top: 700px;
+        left: -20px;
+        z-index: -1;
+        width: 210px;
+        height: 351px;
     }
 
 }

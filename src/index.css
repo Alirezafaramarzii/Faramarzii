@@ -72,6 +72,16 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 9px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd;
+  border-radius: 8px;
+}
 
 
 h1 {
