@@ -1,13 +1,14 @@
 .product {
-    padding: 72px 0;
+    margin: 104px 0 0 0;
 }
 
 
-.title-product {
-    text-align: center;
-    color: white;
-    margin-bottom: 72px;
+
+.title {
+    margin: 0 0 40px 0;
+    width: 100%;
 }
+
 
 .div-Product {
     padding: 16px 24px;
@@ -39,11 +40,6 @@ a {
     color: rgb(212, 212, 212);
 }
 
-@media only screen and (max-width: 1200px) {
-    .title-product {
-        margin-bottom: 54px;
-    }
-}
 
 @media only screen and (max-width: 500px) {
     .product {

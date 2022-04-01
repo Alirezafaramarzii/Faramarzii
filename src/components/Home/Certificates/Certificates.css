@@ -3,7 +3,7 @@
     text-align: right;
 }
 
-.title-certificates h3 {
+.title-certificates h2 {
     margin-bottom: 24px;
 }
 
@@ -27,6 +27,7 @@
 
 .p-certificates{
     text-align: right;
+    padding-top: 15px;
 }
 
 @media only screen and (max-width: 1300px) {

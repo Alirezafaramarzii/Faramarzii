@@ -6,7 +6,7 @@ import alireza from "../../../img/alireza.png"
 import mohamadmahdi from "../../../img/mohamadmahdi.png"
 
 // component
-import "./index"
+// import "./index"
 
 const Slider = () => {
     return ( 

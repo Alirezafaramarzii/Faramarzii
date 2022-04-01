@@ -17,13 +17,13 @@ const Profile = () => {
                 <div className='Personal-profile'>
                     <div className='top-profile'>
                         <img src={mmf} alt='' />
-                        <h5 className='text'>محمد مهدی فرامرزی</h5>
+                        <h4 className='text'>محمد مهدی فرامرزی</h4>
                     </div>
                     <div className='namad'>
                         <span></span>
                     </div>
                     <div className='text-profile'>
-                        <h5>مشخصات فردی</h5>
+                        <h4>مشخصات فردی</h4>
                         <p className='text-body-md'>متولد : 1384/03/21</p>
                         <p className='text-body-md'>وضعیت تاهل : مجرد</p>
                         <p className='text-body-md'>وضعیت سربازی : معافیت تحصیلی</p>
@@ -39,13 +39,13 @@ const Profile = () => {
                 <div className='Personal-profile'>
                     <div className='top-profile'>
                         <img src={af} alt='' />
-                        <h5 className='text'>علیرضا فرامرزی</h5>
+                        <h4 className='text'>علیرضا فرامرزی</h4>
                     </div>
                     <div className='namad'>
                         <span></span>
                     </div>
                     <div className='text-profile'>
-                        <h5>مشخصات فردی</h5>
+                        <h4>مشخصات فردی</h4>
                         <p className='text-body-md'>متولد : 1384/03/21</p>
                         <p className='text-body-md'>وضعیت تاهل : مجرد</p>
                         <p className='text-body-md'>وضعیت سربازی : معافیت تحصیلی</p>
