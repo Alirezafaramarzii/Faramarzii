@@ -1,0 +1,65 @@
+/* footer */
+
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 18px -3px rgba(117, 98, 224, 0.23);
+    border-radius: 16px;
+    padding: 24px 0;
+    margin-bottom: 32px;
+
+}
+
+.Social {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Social svg {
+    width: 35px;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    footer {
+        margin-bottom: 24PX;
+        padding: 24px;
+    }
+
+
+    .Social {
+        font-size: 14PX;
+    }
+    .Social svg {
+        width: 25px;
+        margin: 0 10px 0px 0;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    footer {
+        margin-bottom: 24PX;
+        padding: 16px 0;
+
+    }
+
+
+    .Social {
+        margin-bottom: 20px;
+    }
+
+
+    .Social svg {
+        width: 25px;
+        margin: 0 10px 0px 0;
+    }
+
+
+}

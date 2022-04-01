@@ -233,4 +233,8 @@ code {
   h6 {
     font-size: 12px;
   }
+
+  .text-body-lg{
+    font-size: 14px;
+  }
 }

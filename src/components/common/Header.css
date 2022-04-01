@@ -51,12 +51,12 @@
     margin: 0 0 0 4px;
 }
 
-.btn-mood {
+.navbar-desktop .btn-mood {
     width: 55px;
     height: 24px;
 }
 
-.btn-mood button {
+.navbar-desktop .btn-mood button {
     position: relative;
     width: 100%;
     height: 100%;
@@ -67,7 +67,7 @@
     outline: none;
 }
 
-.btn-mood button span {
+.navbar-desktop .btn-mood button span {
     position: absolute;
     top: 0;
     right: -5px;
@@ -80,9 +80,108 @@
     align-items: center;
 }
 
-.btn-mood button span svg {
+.navbar-desktop .btn-mood button span svg {
     width: 16px;
     height: 16px;
     color: var(--F9F9F9);
     transform: rotate(-100deg);
 }
+
+
+/* ---------------------------- */
+
+.navbar-mobile {
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 18px -3px rgba(117, 98, 224, 0.23);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.navbar-mobile .navbar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.navbar-mobile .logo {
+    width: 110px;
+    height: 25px;
+}
+
+.hamburger{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+
+.hamburger svg{
+    width: 25px;
+    height: 25px;
+}
+
+
+.navbar-mobile .btn-mood {
+    width: 50px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar-mobile .btn-mood button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(234, 234, 234, 0.1);
+    box-shadow: inset 0px 0px 2px 1px var(--Purple);
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+.navbar-mobile .btn-mood button span {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 22px;
+    height: 22px;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-mobile .btn-mood button span svg {
+    width: 12px;
+    height: 12px;
+    color: var(--F9F9F9);
+    transform: rotate(-100deg);
+}
+
+
+.show-slider{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    right: 0;
+    z-index: 10;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    background-color: aliceblue;
+}
+
+.noneSlider{
+    display: none;
+}
+

@@ -1,8 +1,10 @@
 import React from 'react';
+import Footer from '../common/Footer/Footer';
 import Header from '../common/Header';
 import Home from '../Home/Home';
 
 // Style
+
 import "./MainLayout.css";
 
 
@@ -44,6 +46,8 @@ const MainLayout = () => {
                     </filter>
                 </defs>
             </svg> */}
+
+            <Footer/>
         </div>
     );
 };

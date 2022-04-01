@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Style
 import "./Header.css";
@@ -7,6 +7,18 @@ import "./Header.css";
 import Faramarzi from "../../img/Faramarzi.png"
 
 const Header = () => {
+
+    const [sidenav, setSidenav] = useState(false);
+
+    const sidnaveHandler = () => {
+        setSidenav(true);
+    }
+
+    const Handler = () => {
+        setSidenav(false);
+
+    }
+
     return (
         <>
             <div className='navbar navbar-expand navbar-desktop d-none d-xl-flex'>
@@ -86,13 +98,20 @@ const Header = () => {
 
             </div>
 
-            <div className='navbar navbar-expand navbar-desktop d-flex d-xl-none'>
+            <div className='navbar navbar-expand navbar-mobile d-flex d-xl-none'>
                 <div className='navbar-right'>
+                    <button className='hamburger' onClick={sidnaveHandler}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+
                     <a className="navbar-brand" href="#">
                         <img className='logo' src={Faramarzi} alt="" />
                     </a>
 
                 </div>
+
                 <div className='btn-mood'>
                     <button>
                         <span>
@@ -103,6 +122,12 @@ const Header = () => {
                     </button>
                 </div>
 
+            </div>
+            
+            <div className={sidenav === true ? "show-slider" : "noneSlider"} onClick={Handler}>
+                <div className='sidenav'>
+                    
+                </div>
             </div>
         </>
 

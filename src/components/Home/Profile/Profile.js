@@ -17,7 +17,7 @@ const Profile = () => {
                 <div className='Personal-profile'>
                     <div className='top-profile'>
                         <img src={mmf} alt='' />
-                        <h4 className='text'>محمد مهدی فرامرزی</h4>
+                        <h5 className='text'>محمد مهدی فرامرزی</h5>
                     </div>
                     <div className='namad'>
                         <span></span>
@@ -39,7 +39,7 @@ const Profile = () => {
                 <div className='Personal-profile'>
                     <div className='top-profile'>
                         <img src={af} alt='' />
-                        <h4 className='text'>علیرضا فرامرزی</h4>
+                        <h5 className='text'>علیرضا فرامرزی</h5>
                     </div>
                     <div className='namad'>
                         <span></span>
