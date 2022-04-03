@@ -23,7 +23,7 @@ const Profile = () => {
                         <span></span>
                     </div>
                     <div className='text-profile'>
-                        <h5>مشخصات فردی</h5>
+                        <h4>مشخصات فردی</h4>
                         <p className='text-body-md'>متولد : 1384/03/21</p>
                         <p className='text-body-md'>وضعیت تاهل : مجرد</p>
                         <p className='text-body-md'>وضعیت سربازی : معافیت تحصیلی</p>
@@ -45,7 +45,7 @@ const Profile = () => {
                         <span></span>
                     </div>
                     <div className='text-profile'>
-                        <h5>مشخصات فردی</h5>
+                        <h4>مشخصات فردی</h4>
                         <p className='text-body-md'>متولد : 1384/03/21</p>
                         <p className='text-body-md'>وضعیت تاهل : مجرد</p>
                         <p className='text-body-md'>وضعیت سربازی : معافیت تحصیلی</p>

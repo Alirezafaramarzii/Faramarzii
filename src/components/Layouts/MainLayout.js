@@ -1,8 +1,10 @@
 import React from 'react';
+import Footer from '../common/Footer/Footer';
 import Header from '../common/Header';
 import Home from '../Home/Home';
 
 // Style
+
 import "./MainLayout.css";
 
 
@@ -15,7 +17,7 @@ const MainLayout = () => {
             <Header />
             <Home />
 
-            <svg className='vector1' viewBox="0 0 1135 681" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* <svg className='vector1' viewBox="0 0 1135 681" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_38_864)">
                     <path d="M227.959 183.5C98.3588 180.7 111.959 97.3333 134.959 56V4L1151.96 -34C1168.13 145.333 1190.76 491.6 1151.96 442C1103.46 380 820.959 497.5 686.459 552.5C551.959 607.5 610.959 373 603.959 297.5C596.959 222 389.959 187 227.959 183.5Z" fill="url(#paint0_linear_38_864)" fill-opacity="0.5" />
                 </g>
@@ -43,7 +45,9 @@ const MainLayout = () => {
                         <feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_38_884" />
                     </filter>
                 </defs>
-            </svg>
+            </svg> */}
+
+            <Footer />
         </div>
     );
 };

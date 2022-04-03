@@ -9,7 +9,7 @@ const certificates = () => {
         <div className="d-flex row justify-content-center justify-content-lg-between align-items-center">
 
         <div className="col-12 col-lg-4 title-certificates">
-            <h3>گواهینامه ها</h3>
+            <h2>گواهینامه ها</h2>
             <p> این یک متن آزمایشی می باشد که برای بخش گواهینامه ها استفاده می شوداین یک متن آزمایشی می باشد که برای
                 بخش گواهینامه ها استفاده می شود </p>
         </div>

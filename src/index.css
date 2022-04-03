@@ -69,7 +69,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   padding: 24px 0;
   background-color: var(--background-body);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body::-webkit-scrollbar {
@@ -205,4 +205,36 @@ h6 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 16px;
+  }
+
+
+  h5 {
+    font-size: 14px;
+  }
+  
+  h6 {
+    font-size: 12px;
+  }
+
+  .text-body-lg{
+    font-size: 14px;
+  }
 }
