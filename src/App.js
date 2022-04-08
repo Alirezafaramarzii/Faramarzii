@@ -1,4 +1,7 @@
+import React from "react";
+
 import './App.css';
+
 import MainLayout from './components/Layouts/MainLayout';
 
 function App() {

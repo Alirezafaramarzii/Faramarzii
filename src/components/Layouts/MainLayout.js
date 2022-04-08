@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Footer from '../common/Footer/Footer';
 import Header from '../common/Header';
 import Home from '../Home/Home';
@@ -81,7 +82,7 @@ const MainLayout = () => {
                     </linearGradient>
                 </defs>
             </svg>
-
+            {/* 
             <svg className='vector4' viewBox="0 0 488 808" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_28_585)">
                     <path d="M110.043 178.049C120.043 112.049 8.87637 115.549 -47.957 125.549C-56.2903 329.383 -67.957 753.049 -47.957 817.049C-22.957 897.049 290.543 729.549 350.543 704.549C410.543 679.549 288.043 581.549 318.043 541.549C348.043 501.549 155.043 343.549 182.543 275.549C210.043 207.549 97.543 260.549 110.043 178.049Z" fill="#628EE0" />
@@ -93,7 +94,7 @@ const MainLayout = () => {
                         <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_28_585" />
                     </filter>
                 </defs>
-            </svg>
+            </svg> */}
 
 
 

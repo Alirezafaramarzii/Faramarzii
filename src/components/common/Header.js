@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+
 
 // Style
 import "./Header.css";
 
 // img
-import Faramarzi from "../../img/Faramarzi.png"
+import Faramarzi from "../../img/Faramarzi.png";
+
+import { Themes } from '../services/Theme';
+
 
 const Header = () => {
 
@@ -19,7 +24,22 @@ const Header = () => {
 
     }
 
+    const [colorName, setColorName] = useState(localStorage.getItem('colorName') || '');
 
+
+    useEffect(() => {
+        localStorage.setItem("colorName", colorName);
+        return Themes();
+    }, [colorName]);
+
+
+    const onChangeColorDefault = () => {
+        setColorName("Default");
+    }
+
+    const onChangeColorLight = () => {
+        setColorName("Light");
+    }
 
     return (
         <>
@@ -89,13 +109,26 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className='btn-mood'>
-                    <button>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-moon" viewBox="0 0 16 16">
-                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
-                            </svg>
-                        </span>
-                    </button>
+                    {colorName == "Light" ?
+
+
+                        <button className='Light' onClick={onChangeColorDefault}>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
+                                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                        :
+                        <button className='Default' onClick={onChangeColorLight}>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-moon" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+                                </svg>
+                            </span>
+                        </button>
+                    }
                 </div>
 
             </div>
@@ -103,7 +136,7 @@ const Header = () => {
             <div className='navbar navbar-expand navbar-mobile d-flex d-xl-none'>
                 <div className='navbar-right'>
                     <button className='hamburger' onClick={sidnaveHandler}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                         </svg>
                     </button>
@@ -115,21 +148,34 @@ const Header = () => {
                 </div>
 
                 <div className='btn-mood'>
-                    <button>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-moon" viewBox="0 0 16 16">
-                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
-                            </svg>
-                        </span>
-                    </button>
+                    {colorName == "Light" ?
+
+
+                        <button className='Light' onClick={onChangeColorDefault}>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-brightness-low" viewBox="0 0 16 16">
+                                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm.5-9.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z" />
+                                </svg>
+
+                            </span>
+                        </button>
+                        :
+                        <button className='Default' onClick={onChangeColorLight}>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-moon" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z" />
+                                </svg>
+                            </span>
+                        </button>
+                    }
                 </div>
 
             </div>
 
-            <div className={sidenav === true ? "show-slider" : "noneSlider"} >
+            <div className={sidenav === true ? "Sidebar open" : "Sidebar"} >
                 <div className='div-sidenav' onClick={Handler}>
                 </div>
-                <div className='sidenav animate__animated animate__fadeInRight'>
+                <div className={sidenav === true ? "sidenav active" : "sidenav"} >
                     <svg className='vector1-sidenav' viewBox="0 0 1135 681" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_f_38_864)">
                             <path d="M227.959 183.5C98.3588 180.7 111.959 97.3333 134.959 56V4L1151.96 -34C1168.13 145.333 1190.76 491.6 1151.96 442C1103.46 380 820.959 497.5 686.459 552.5C551.959 607.5 610.959 373 603.959 297.5C596.959 222 389.959 187 227.959 183.5Z" fill="url(#paint0_linear_38_864)" fill-opacity="0.5" />

@@ -37,30 +37,34 @@
 :root {
   /* ------main colors----- */
   --Black: #070707;
-  --Blue: #628EE0;
-  --Purple: #7562E0;
-  --White: #FFFFFF;
-  --background-body: #030E21;
-  --text-color: #F9F9F9;
-  --text-color2: #EDEDED;
-
+  --Blue: #628ee0;
+  --Purple: #7562e0;
+  --White: #ffffff;
+  --background-body: #030e21;
+  --text-color: #f9f9f9;
+  --text-color2: #ededed;
 
   /* ------Other colors----- */
-  --F9F9F9: #F9F9F9;
-  --CBCBCB: #CBCBCB;
-  --EDEDED: #EDEDED;
+  --F9F9F9: #f9f9f9;
+  --CBCBCB: #cbcbcb;
+  --EDEDED: #ededed;
   --757575: #757575;
 
-  --Purple-01: #EEEBFB;
-  --Purple-02: #9889E8;
-  --Purple-03: #5740D9;
+  --Purple-01: #eeebfb;
+  --Purple-02: #9889e8;
+  --Purple-03: #5740d9;
   --Purple-04: #201465;
 
-  --Blue-01: #EBF1FB;
-  --Blue-01: #89AAE8;
-  --Blue-01: #4076D9;
+  --Blue-01: #ebf1fb;
+  --Blue-01: #89aae8;
+  --Blue-01: #4076d9;
   --Blue-01: #143065;
+}
 
+.light-Theme {
+  --background-body: #fefeff;
+  --text-color: #070707;
+  --text-color2: #333333;
 }
 
 body {
@@ -75,14 +79,13 @@ body {
 body::-webkit-scrollbar {
   width: 10px;
   height: 9px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #bdbdbd;
   border-radius: 8px;
 }
-
 
 h1 {
   font-size: 44px;
@@ -101,140 +104,123 @@ h3 {
   font-size: 32px;
   font-family: "IRANSansWeb_Bold";
   color: var(--text-color);
-
 }
 
 h4 {
   font-size: 24px;
   font-family: "IRANSansWeb_Bold";
   color: var(--text-color);
-
 }
 
 h5 {
   font-size: 20px;
   font-family: "IRANSansWeb_Bold";
   color: var(--text-color);
-
 }
 
 h6 {
   font-size: 16px;
   font-family: "IRANSansWeb_Bold";
   color: var(--text-color);
-
 }
 
 .text-body-xl {
   font-size: 20px;
   font-family: "IRANSansWeb";
   color: var(--text-color2);
-
 }
 
 .text-body-lg {
   font-size: 18px;
   font-family: "IRANSansWeb_Light";
   color: var(--text-color2);
-
 }
 
 .text-body-md {
   font-size: 16px;
   font-family: "IRANSansWeb";
   color: var(--text-color2);
-
 }
 
 .text-body-sm {
   font-size: 14px;
   font-family: "IRANSansWeb_Light";
   color: var(--text-color2);
-
 }
 
 .text-body-xs {
   font-size: 14px;
   font-family: "IRANSansWeb_Light";
   color: var(--text-color2);
-
 }
 
 .text-caption-lg {
   font-size: 14px;
   font-family: "IRANSansWeb_Medium";
   color: var(--text-color2);
-
 }
 
 .text-caption-md {
   font-size: 12px;
   font-family: "IRANSansWeb_Medium";
   color: var(--text-color2);
-
 }
 
 .text-button-lg {
   font-size: 16px;
   font-family: "IRANSansWeb";
   color: var(--text-color2);
-
 }
 
 .text-button-sm {
   font-size: 14px;
   font-family: "IRANSansWeb_Medium";
   color: var(--text-color2);
-
 }
 
 .text-overLine-lg {
   font-size: 14px;
   font-family: "IRANSansWeb_Medium";
   color: var(--text-color2);
-
 }
 
 .text-button-md {
   font-size: 12px;
   font-family: "IRANSansWeb_Medium";
   color: var(--text-color2);
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 40px;
   }
-  
+
   h2 {
     font-size: 32px;
   }
-  
+
   h3 {
     font-size: 24px;
   }
-  
+
   h4 {
     font-size: 16px;
   }
 
-
   h5 {
     font-size: 14px;
   }
-  
+
   h6 {
     font-size: 12px;
   }
 
-  .text-body-lg{
+  .text-body-lg {
     font-size: 14px;
   }
 }

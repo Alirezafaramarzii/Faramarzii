@@ -6,7 +6,7 @@ import Certificates from "../../../img/Certificates.png"
 
 const certificates = () => {
     return (
-        <div className="d-flex row justify-content-center justify-content-lg-between align-items-center">
+        <div className="d-flex row justify-content-center justify-content-lg-between align-items-center Certificates">
 
             <div className="col-12 col-lg-4 title-certificates">
                 <h2>گواهینامه ها</h2>

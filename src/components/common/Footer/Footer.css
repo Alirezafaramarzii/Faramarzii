@@ -9,7 +9,7 @@ footer {
 }
 
 .Social {
-  color: white;
+  color: var(--text-color2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,8 @@ footer {
 }
 
 .Social svg {
-  width: 35px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 

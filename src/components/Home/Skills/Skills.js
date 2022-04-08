@@ -23,7 +23,7 @@ const Skills = () => {
                                 <span>100%</span>
                             </div>
                             <div className="body-chart progress">
-                                <span class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}></span>
+                                <span className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></span>
                             </div>
                         </div>
                         <div className="chart">
@@ -32,7 +32,7 @@ const Skills = () => {
                                 <span>100%</span>
                             </div>
                             <div className="body-chart progress">
-                                <span class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}></span>
+                                <span className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></span>
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@ const Skills = () => {
                                 <span>100%</span>
                             </div>
                             <div className="body-chart progress">
-                                <span class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}></span>
+                                <span className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></span>
                             </div>
                         </div>
 
@@ -52,7 +52,7 @@ const Skills = () => {
                                 <span>100%</span>
                             </div>
                             <div className="body-chart progress">
-                                <span class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}></span>
+                                <span className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></span>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Skills = () => {
                                 <span>100%</span>
                             </div>
                             <div className="body-chart progress">
-                                <span class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{width:"100%"}}></span>
+                                <span className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: "100%" }}></span>
                             </div>
                         </div>
                         <div className="chart">
@@ -80,7 +80,7 @@ const Skills = () => {
                                 <span>80%</span>
                             </div>
                             <div className="body-chart progress">
-                                <span class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{width:"80%"}}></span>
+                                <span className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: "80%" }}></span>
                             </div>
                         </div>
 
@@ -90,7 +90,7 @@ const Skills = () => {
                                 <span>60%</span>
                             </div>
                             <div className="body-chart progress">
-                                <span class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{width:"60%"}}></span>
+                                <span className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{ width: "60%" }}></span>
                             </div>
                         </div>
 

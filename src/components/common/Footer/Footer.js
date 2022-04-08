@@ -66,21 +66,21 @@ const Footer = () => {
 
             </footer>
 
-            <div class="modal fade" id="instagram" tabindex="-1" aria-labelledby="instagram" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+            <div className="modal fade" id="instagram" tabindex="-1" aria-labelledby="instagram" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
 
 
-                        <div class="modal-header">
-                            <p class="modal-title">instagram</p>
+                        <div className="modal-header">
+                            <p className="modal-title">instagram</p>
                             <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                                 </svg>
                             </button>
 
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <a href="#" className="Personal-link">
                                 <div className="img">
                                     <img src={mmf} alt='' />
@@ -104,60 +104,21 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="telegram" tabindex="-1" aria-labelledby="telegram" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+            <div className="modal fade" id="telegram" tabindex="-1" aria-labelledby="telegram" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
 
 
-                        <div class="modal-header">
-                            <p class="modal-title">telegram</p>
+                        <div className="modal-header">
+                            <p className="modal-title">telegram</p>
                             <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                                 </svg>
                             </button>
 
                         </div>
-                        <div class="modal-body">
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={mmf} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>محمد مهدی فرامرزی</h3>
-                                    <span>mohammadmahdi.mmf</span>
-                                </div>
-                            </a>
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={af} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>علیرضا فرامزری</h3>
-                                    <span>alirez.af</span>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="github" tabindex="-1" aria-labelledby="github" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-
-
-                        <div class="modal-header">
-                            <p class="modal-title">github</p>
-                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
-
-                        </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <a href="#" className="Personal-link">
                                 <div className="img">
                                     <img src={mmf} alt='' />
@@ -182,21 +143,60 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div class="modal fade" id="whatsapp" tabindex="-1" aria-labelledby="whatsapp" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
+            <div className="modal fade" id="github" tabindex="-1" aria-labelledby="github" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
 
 
-                        <div class="modal-header">
-                            <p class="modal-title">whatsapp</p>
+                        <div className="modal-header">
+                            <p className="modal-title">github</p>
                             <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
                                     <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                                 </svg>
                             </button>
 
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
+                            <a href="#" className="Personal-link">
+                                <div className="img">
+                                    <img src={mmf} alt='' />
+                                </div>
+                                <div className="text">
+                                    <h3>محمد مهدی فرامرزی</h3>
+                                    <span>mohammadmahdi.mmf</span>
+                                </div>
+                            </a>
+                            <a href="#" className="Personal-link">
+                                <div className="img">
+                                    <img src={af} alt='' />
+                                </div>
+                                <div className="text">
+                                    <h3>علیرضا فرامزری</h3>
+                                    <span>alirez.af</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="modal fade" id="whatsapp" tabindex="-1" aria-labelledby="whatsapp" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content">
+
+
+                        <div className="modal-header">
+                            <p className="modal-title">whatsapp</p>
+                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+
+                        </div>
+                        <div className="modal-body">
                             <a href="#" className="Personal-link">
                                 <div className="img">
                                     <img src={mmf} alt='' />
