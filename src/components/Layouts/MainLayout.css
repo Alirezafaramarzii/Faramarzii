@@ -1,3 +1,6 @@
+.MainLayout {
+    overflow: hidden;
+}
 
 .vector1 {
     position: absolute;
@@ -11,15 +14,39 @@
 .vector2 {
     position: absolute;
     opacity: 0.7;
-    top: 500px;
+    top: 470px;
     left: -20px;
     z-index: -1;
-    width: 567px;
-    height: 1084px;
+    width: 620px;
+    height: 1204px;
 }
 
 
-@media only screen and (max-width: 1200px) {
+.vector3 {
+    position: absolute;
+    top: 1800px;
+    right: 0px;
+    z-index: -1;
+    width: 800px;
+    height: 1200px;
+}
+
+.vector3-2 {
+    display: none;
+}
+
+
+.vector4 {
+    position: absolute;
+    opacity: 0.7;
+    top: 2700px;
+    left: -20px;
+    z-index: -1;
+    width: 620px;
+    height: 1204px;
+}
+
+@media only screen and (max-width:1300px) {
 
     .vector1 {
         position: absolute;
@@ -32,12 +59,219 @@
 
     .vector2 {
         position: absolute;
-        opacity: 0.7;
+        opacity: 0.6;
         top: 700px;
-        left: -20px;
+        left: 0px;
         z-index: -1;
-        width: 210px;
-        height: 351px;
+        width: 370px;
+        height: 650px;
+    }
+
+    .vector3 {
+        position: absolute;
+        top: 1600px;
+        right: 0px;
+        z-index: -1;
+        width: 500px;
+        height: 1200px;
+    }
+
+    .vector3-2 {
+        display: none;
+    }
+
+
+    .vector4 {
+        position: absolute;
+        opacity: 0.5;
+        top: 2500px;
+        left: 0px;
+        z-index: -1;
+        width: 400px;
+        height: 904px;
+    }
+
+
+}
+
+@media only screen and (max-width:900px) {
+
+    .vector1 {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        z-index: -1;
+        width: 350px;
+        height: 230px;
+    }
+
+    .vector2 {
+        position: absolute;
+        opacity: 0.6;
+        top: 700px;
+        left: 0px;
+        z-index: -1;
+        width: 370px;
+        height: 650px;
+    }
+
+    .vector3 {
+        position: absolute;
+        top: 2700px;
+        right: 0px;
+        z-index: -1;
+        width: 500px;
+        height: 1200px;
+    }
+
+    .vector3-2 {
+        display: none;
+    }
+
+
+    .vector4 {
+        position: absolute;
+        opacity: 0.5;
+        top: 4500px;
+        left: 0px;
+        z-index: -1;
+        width: 400px;
+        height: 904px;
+    }
+
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .vector1 {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        z-index: -1;
+        width: 350px;
+        height: 230px;
+    }
+
+    .vector2 {
+        position: absolute;
+        opacity: 0.6;
+        top: 700px;
+        left: 0px;
+        z-index: -1;
+        width: 370px;
+        height: 650px;
+    }
+
+    .vector3 {
+        position: absolute;
+        top: 2700px;
+        right: 0px;
+        z-index: -1;
+        width: 500px;
+        height: 1200px;
+    }
+
+    .vector3-2 {
+        display: block;
+        position: absolute;
+        top: 4100px;
+        right: 0px;
+        z-index: -1;
+        width: 500px;
+        height: 1200px;
+    }
+
+
+    .vector4 {
+        position: absolute;
+        opacity: 0.5;
+        top: 6000px;
+        left: 0px;
+        z-index: -1;
+        width: 300px;
+        height: 704px;
+    }
+
+
+}
+
+@media only screen and (max-width:450px) {
+
+    .vector1 {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        z-index: -1;
+        width: 350px;
+        height: 230px;
+    }
+
+    .vector2 {
+        position: absolute;
+        opacity: 0.6;
+        top: 700px;
+        left: 0px;
+        z-index: -1;
+        width: 370px;
+        height: 650px;
+    }
+
+    .vector3 {
+        position: absolute;
+        top: 2700px;
+        right: 0px;
+        z-index: -1;
+        width: 350px;
+        height: 1000px;
+    }
+
+    .vector3-2 {
+        display: block;
+        position: absolute;
+        top: 3500px;
+        right: 0px;
+        z-index: -1;
+        width: 350px;
+        height: 1000px;
+    }
+
+
+
+
+    .vector4 {
+        position: absolute;
+        opacity: 0.5;
+        top: 5000px;
+        left: 0px;
+        z-index: -1;
+        width: 300px;
+        height: 704px;
+    }
+
+
+}
+
+@media only screen and (max-width: 322px) {
+
+    .vector1 {
+        display: none;
+    }
+
+    .vector2 {
+        display: none;
+    }
+
+    .vector3 {
+        display: none;
+    }
+
+    .vector3-2 {
+        display: none;
+    }
+
+    .vector4 {
+        display: none;
     }
 
 }

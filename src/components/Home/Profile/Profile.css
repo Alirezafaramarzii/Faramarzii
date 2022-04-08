@@ -113,6 +113,19 @@
 }
 
 
+@media only screen and (max-width: 800px) {
+
+    .profile-div{
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+}
+
+
+
 @media only screen and (max-width: 500px) {
 
     .Personal-profile {
@@ -129,6 +142,7 @@
         width: 80px;
         height: 80px;
     }
+    
 
 
 }

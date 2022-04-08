@@ -13,7 +13,7 @@ import Personalprofile2 from "../../../img/Personal-profile2-light.png"
 const Profile = () => {
     return (
         <div className='Profile row'>
-            <div className='col-12 col-lg-6'>
+            <div className='col-12 col-lg-6 profile-div'>
                 <div className='Personal-profile'>
                     <div className='top-profile'>
                         <img src={mmf} alt='' />
@@ -29,13 +29,13 @@ const Profile = () => {
                         <p className='text-body-md'>وضعیت سربازی : معافیت تحصیلی</p>
                         <p className='text-body-md'>محل سکونت : قم</p>
                     </div>
-                    <div className='img-text-profile d-none d-md-flex'>
+                    <div className='img-text-profile d-none d-md-flex d-lg-none d-xl-flex'>
                         <img src={Personalprofile2} alt='' />
                     </div>
                 </div>
             </div>
 
-            <div className='col-12 col-lg-6'>
+            <div className='col-12 col-lg-6 profile-div'>
                 <div className='Personal-profile'>
                     <div className='top-profile'>
                         <img src={af} alt='' />
@@ -51,7 +51,7 @@ const Profile = () => {
                         <p className='text-body-md'>وضعیت سربازی : معافیت تحصیلی</p>
                         <p className='text-body-md'>محل سکونت : قم</p>
                     </div>
-                    <div className='img-text-profile d-none d-md-flex'>
+                    <div className='img-text-profile d-none d-md-flex d-lg-none d-xl-flex'>
                         <img src={Personalprofile1} alt='' />
 
                     </div>
