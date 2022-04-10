@@ -46,7 +46,7 @@ const Profile = () => {
                     </div>
                     <div className='text-profile'>
                         <h4>مشخصات فردی</h4>
-                        <p className='text-body-md'>متولد : 1384/03/21</p>
+                        <p className='text-body-md'>متولد : 1383/01/17</p>
                         <p className='text-body-md'>وضعیت تاهل : مجرد</p>
                         <p className='text-body-md'>وضعیت سربازی : معافیت تحصیلی</p>
                         <p className='text-body-md'>محل سکونت : قم</p>

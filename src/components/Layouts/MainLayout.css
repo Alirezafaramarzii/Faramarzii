@@ -142,6 +142,8 @@
     right: 0px;
     width: 500px;
     height: 1200px;
+    z-index: -1;
+
   }
 
   .vector4 {

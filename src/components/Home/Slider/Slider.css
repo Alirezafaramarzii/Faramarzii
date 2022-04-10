@@ -59,11 +59,16 @@
 
 .btn-next {
   left: 10px;
+  color: var(--text-color2) !important;
+
 }
 
 .btn-prev {
   right: 10px;
+  color: var(--text-color2) !important;
+
 }
+
 
 .dot {
   cursor: pointer;
