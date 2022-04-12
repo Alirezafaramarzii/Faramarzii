@@ -21,7 +21,6 @@ const Header = () => {
 
     const Handler = () => {
         setSidenav(false);
-
     }
 
     const [colorName, setColorName] = useState(localStorage.getItem('colorName') || '');
@@ -43,15 +42,15 @@ const Header = () => {
 
     return (
         <>
-            <div className='navbar navbar-expand navbar-desktop d-none d-xl-flex'>
+            <div className='navbar navbar-expand navbar-desktop d-none d-xl-flex' id='#Header'>
                 <div className='navbar-right'>
 
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="Header">
                         <img className='logo' src={Faramarzi} alt="" />
                     </a>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Profile">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-person" viewBox="0 0 16 16">
                                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                                 </svg>
@@ -61,7 +60,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Skills">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-bar-chart" viewBox="0 0 16 16">
                                     <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z" />
                                 </svg>
@@ -70,7 +69,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Product">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-tv" viewBox="0 0 16 16">
                                     <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
                                 </svg>
@@ -79,7 +78,7 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#certificates">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-mortarboard" viewBox="0 0 16 16">
                                     <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
                                     <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
@@ -89,7 +88,7 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Description">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-justify-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
                                 </svg>
@@ -98,7 +97,7 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#contact-us">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-headset" viewBox="0 0 16 16">
                                     <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
                                 </svg>
@@ -210,7 +209,7 @@ const Header = () => {
                     </a>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Profile" onClick={Handler}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-person" viewBox="0 0 16 16">
                                     <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                                 </svg>
@@ -220,7 +219,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Skills" onClick={Handler}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-bar-chart" viewBox="0 0 16 16">
                                     <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z" />
                                 </svg>
@@ -229,7 +228,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Product" onClick={Handler}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-tv" viewBox="0 0 16 16">
                                     <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z" />
                                 </svg>
@@ -238,7 +237,7 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#certificates" onClick={Handler}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-mortarboard" viewBox="0 0 16 16">
                                     <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
                                     <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
@@ -248,7 +247,7 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#Description" onClick={Handler}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-justify-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
                                 </svg>
@@ -257,7 +256,7 @@ const Header = () => {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <a className="nav-link" href="#contact-us" onClick={Handler}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-headset" viewBox="0 0 16 16">
                                     <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
                                 </svg>

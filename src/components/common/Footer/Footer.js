@@ -5,11 +5,70 @@ import "./Footer.css";
 import Faramarzi from "../../../img/Faramarzi.png"
 import af from "../../../img/af.jpg"
 import mmf from "../../../img/mmf.jpg"
+import { useState } from "react";
 
 const Footer = () => {
+
+
+    const [instagram, setInstagram] = useState(false);
+    const [telegram, setTelegram] = useState(false);
+    const [github, setGithub] = useState(false);
+    const [whatsapp, setWhatsapp] = useState(false);
+
+
+    const instagramShow = () => {
+        setInstagram(true);
+        document.body.classList.add("scrollNone");
+    }
+
+    const instagramNone = () => {
+        setInstagram(false);
+        document.body.classList.remove("scrollNone");
+
+    }
+
+    const telegramShow = () => {
+        setTelegram(true);
+        document.body.classList.add("scrollNone");
+
+    }
+
+    const telegramNone = () => {
+        setTelegram(false);
+        document.body.classList.remove("scrollNone");
+
+    }
+
+
+    const githubShow = () => {
+        setGithub(true);
+        document.body.classList.add("scrollNone");
+
+    }
+
+    const githubNone = () => {
+        setGithub(false);
+        document.body.classList.remove("scrollNone");
+
+    }
+
+
+    const whatsappShow = () => {
+        setWhatsapp(true);
+        document.body.classList.add("scrollNone");
+
+    }
+
+    const whatsappNone = () => {
+        setWhatsapp(false);
+        document.body.classList.remove("scrollNone");
+
+    }
+
+
     return (
         <>
-            <footer>
+            <footer id="contact-us">
 
                 <div className="d-flex row align-items-center justify-content-center">
 
@@ -17,7 +76,7 @@ const Footer = () => {
                         <img src={Faramarzi} alt="faramarzi" />
                     </div>
 
-                    <div className="col-6 col-md-2 Social justify-content-md-end" data-bs-toggle="modal" data-bs-target="#whatsapp">
+                    <div className="col-6 col-md-2 Social justify-content-md-end" onClick={whatsappShow}>
 
                         Whatsapp
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -26,7 +85,7 @@ const Footer = () => {
                         </svg>
                     </div>
 
-                    <div className="col-6 col-md-2 Social justify-content-md-end" data-bs-toggle="modal" data-bs-target="#github">
+                    <div className="col-6 col-md-2 Social justify-content-md-end" onClick={githubShow} >
 
                         Git Hub
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
@@ -40,7 +99,7 @@ const Footer = () => {
                         <img src={Faramarzi} alt="Faramarzi" />
                     </div>
 
-                    <div className="col-6 col-md-2 Social" data-bs-toggle="modal" data-bs-target="#telegram">
+                    <div className="col-6 col-md-2 Social" onClick={telegramShow}>
 
                         Telegram
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-telegram" viewBox="0 0 16 16">
@@ -50,7 +109,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="col-6 col-md-2 Social" data-bs-toggle="modal" data-bs-target="#instagram">
+                    <div className="col-6 col-md-2 Social" onClick={instagramShow}>
 
                         instagram
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
@@ -66,162 +125,158 @@ const Footer = () => {
 
             </footer>
 
-            <div className="modal fade" id="instagram" tabindex="-1" aria-labelledby="instagram" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content">
 
-
-                        <div className="modal-header">
-                            <p className="modal-title">instagram</p>
-                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
-
-                        </div>
-                        <div className="modal-body">
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={mmf} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>محمد مهدی فرامرزی</h3>
-                                    <span>mohammadmahdi.mmf</span>
-                                </div>
-                            </a>
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={af} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>علیرضا فرامزری</h3>
-                                    <span>alirez.af</span>
-                                </div>
-                            </a>
-
-                        </div>
-                    </div>
+            <div className={instagram === true ? "modalll show" : "modalll"}>
+                <div className="div-modal" onClick={instagramNone}>
                 </div>
-            </div>
-            <div className="modal fade" id="telegram" tabindex="-1" aria-labelledby="telegram" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content">
+                <div className="content-modal zoom">
 
+                    <div className="modal-header">
+                        <p className="modal-title">instagram</p>
+                        <button type="button" onClick={instagramNone}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
 
-                        <div className="modal-header">
-                            <p className="modal-title">telegram</p>
-                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
+                    </div>
+                    <div className="modal-body">
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={mmf} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>محمد مهدی فرامرزی</h3>
+                                <span>mohammadmahdi.mmf</span>
+                            </div>
+                        </a>
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={af} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>علیرضا فرامزری</h3>
+                                <span>alirez.af</span>
+                            </div>
+                        </a>
 
-                        </div>
-                        <div className="modal-body">
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={mmf} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>محمد مهدی فرامرزی</h3>
-                                    <span>mohammadmahdi.mmf</span>
-                                </div>
-                            </a>
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={af} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>علیرضا فرامزری</h3>
-                                    <span>alirez.af</span>
-                                </div>
-                            </a>
-
-                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="modal fade" id="github" tabindex="-1" aria-labelledby="github" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content">
+            <div className={telegram === true ? "modalll show" : "modalll"}>
+                <div className="div-modal" onClick={telegramNone}>
+                </div>
+                <div className="content-modal zoom">
 
+                    <div className="modal-header">
+                        <p className="modal-title">telegram</p>
+                        <button type="button" onClick={telegramNone}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
 
-                        <div className="modal-header">
-                            <p className="modal-title">github</p>
-                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
+                    </div>
+                    <div className="modal-body">
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={mmf} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>محمد مهدی فرامرزی</h3>
+                                <span>mohammadmahdi_mmf@</span>
+                            </div>
+                        </a>
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={af} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>علیرضا فرامزری</h3>
+                                <span>daiialiii@</span>
+                            </div>
+                        </a>
 
-                        </div>
-                        <div className="modal-body">
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={mmf} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>محمد مهدی فرامرزی</h3>
-                                    <span>mohammadmahdi.mmf</span>
-                                </div>
-                            </a>
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={af} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>علیرضا فرامزری</h3>
-                                    <span>alirez.af</span>
-                                </div>
-                            </a>
-
-                        </div>
                     </div>
                 </div>
             </div>
 
-            <div className="modal fade" id="whatsapp" tabindex="-1" aria-labelledby="whatsapp" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content">
+            <div className={github === true ? "modalll show" : "modalll"}>
+                <div className="div-modal" onClick={githubNone}>
+                </div>
+                <div className="content-modal zoom">
+                    <div className="modal-header">
+                        <p className="modal-title">github</p>
+                        <button type="button" onClick={githubNone}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
 
+                    </div>
+                    <div className="modal-body">
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={mmf} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>محمد مهدی فرامرزی</h3>
+                                <span>MohammadMahdiFaramarzi
+                                </span>
+                            </div>
+                        </a>
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={af} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>علیرضا فرامزری</h3>
+                                <span>Alirezafaramarzii</span>
+                            </div>
+                        </a>
 
-                        <div className="modal-header">
-                            <p className="modal-title">whatsapp</p>
-                            <button type="button" data-bs-dismiss="modal" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
-                                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                </svg>
-                            </button>
-
-                        </div>
-                        <div className="modal-body">
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={mmf} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>محمد مهدی فرامرزی</h3>
-                                    <span>mohammadmahdi.mmf</span>
-                                </div>
-                            </a>
-                            <a href="#" className="Personal-link">
-                                <div className="img">
-                                    <img src={af} alt='' />
-                                </div>
-                                <div className="text">
-                                    <h3>علیرضا فرامزری</h3>
-                                    <span>alirez.af</span>
-                                </div>
-                            </a>
-
-                        </div>
                     </div>
                 </div>
             </div>
 
+            <div className={whatsapp === true ? "modalll show" : "modalll"}>
+                <div className="div-modal" onClick={whatsappNone}>
+                </div>
+                <div className="content-modal zoom">
 
+                    <div className="modal-header">
+                        <p className="modal-title">whatsapp</p>
+                        <button type="button" onClick={whatsappNone}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div className="modal-body">
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={mmf} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>محمد مهدی فرامرزی</h3>
+                                <span>09914098381</span>
+                            </div>
+                        </a>
+                        <a href="#" className="Personal-link">
+                            <div className="img">
+                                <img src={af} alt='' />
+                            </div>
+                            <div className="text">
+                                <h3>علیرضا فرامزری</h3>
+                                <span>09199208192</span>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
 
         </>
     );

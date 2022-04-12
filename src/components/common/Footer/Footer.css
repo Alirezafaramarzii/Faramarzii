@@ -1,5 +1,9 @@
 /* footer */
 
+.scrollNone {
+  overflow-y: hidden;
+}
+
 footer {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 5px 18px -3px rgba(117, 98, 224, 0.23);
@@ -53,18 +57,46 @@ footer {
   }
 }
 
-.modal {
-  background-color: #030e2109;
-  backdrop-filter: blur(2px);
+.modalll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-content {
+.modalll.show {
+  display: flex;
+}
+
+.div-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0;
+  z-index: 21;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.555);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s;
+}
+
+.content-modal {
   background-color: var(--background-body);
-  color: rgb(255, 255, 255);
-  padding: 8px 24px;
+  color: var(--background-body);
+  padding: 16px 24px;
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+  width: 30%;
+  z-index: 22;
 }
 
 .modal-header {
@@ -90,8 +122,8 @@ footer {
 }
 
 .modal-body {
-  color: rgb(255, 255, 255);
-  padding: 32px 0;
+  color: var(--background-body);
+  padding: 24px 0 0 0;
 }
 
 .Personal-link {
@@ -139,4 +171,62 @@ footer {
   font-size: 14px;
   font-family: "IRANSansWeb_light";
   color: var(--text-color2);
+}
+
+.zoom {
+  -webkit-animation: animatezoom 0.4s;
+  animation: animatezoom 0.4s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content-modal {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .content-modal {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .content-modal {
+    padding: 10px 16px;
+  }
+
+  .Personal-link {
+    padding: 8px;
+  }
+
+  .Personal-link .img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .Personal-link .text h3 {
+    font-size: 14px;
+  }
+
+  .Personal-link .text span {
+    font-size: 12px;
+  }
 }

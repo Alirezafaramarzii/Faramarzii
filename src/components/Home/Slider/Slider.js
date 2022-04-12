@@ -7,7 +7,7 @@ import mohamadmahdi from "../../../img/mohamadmahdi.png";
 
 const Slider = () => {
     return (
-        <div className="slider">
+        <div className="slider" id="Description">
             <div className="slide2">
 
                 <div className="d-flex row align-items-center justify-content-center">

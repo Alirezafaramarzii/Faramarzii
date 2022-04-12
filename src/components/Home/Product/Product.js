@@ -9,7 +9,7 @@ import image from "../../../img/image.png"
 const Product = () => {
     return (
 
-        <section className="d-flex row product">
+        <section className="d-flex row product" id="Product">
 
             <div className="title">
                 <h2>نمونه کار ها</h2>
