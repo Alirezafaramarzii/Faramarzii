@@ -50,8 +50,8 @@
   flex-wrap: wrap;
 }
 
-.btn-next span,
-.btn-prev span {
+.btn-next svg,
+.btn-prev svg {
   width: 25px;
   height: 25px;
   color: var(--text-color2) !important;
@@ -146,8 +146,8 @@
     margin-right: 24px;
   }
 
-  .btn-next span,
-  .btn-prev span {
+  .btn-next svg,
+  .btn-prev svg {
     width: 15px;
     height: 15px;
   }

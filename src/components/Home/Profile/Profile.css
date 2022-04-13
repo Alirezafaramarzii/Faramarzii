@@ -1,5 +1,6 @@
 .Profile {
-    margin: 24px 0 0 0;
+    margin: 0px;
+    padding-top: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,12 +105,11 @@
     align-items: center;
     height: 100%;
     top: 0px;
-    left: 40px;
-    opacity: 0.8;
+    left: -300px;
 }
 
 .img-text-profile img {
-    width: 80%;
+    width: 30%;
 }
 
 

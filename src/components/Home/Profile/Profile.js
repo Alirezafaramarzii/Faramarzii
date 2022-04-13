@@ -6,19 +6,13 @@ import "./Profile.css";
 // Img
 import af from "../../../img/af.jpg";
 import mmf from "../../../img/mmf.jpg"
-// import Personalprofile1Light from "../../../img/Personal-profile1-light.png";
-// import Personalprofile2Light from "../../../img/Personal-profile2-light.png"
-// import Personalprofile1Dark from "../../../img/Personal-profile1-dark.png";
-// import Personalprofile2Dark from "../../../img/Personal-profile2-dark.png"
+
+import Personalprofile1 from "../../../img/Personalprofile1.png"
+import Personalprofile2 from "../../../img/Personalprofile2.png"
 
 
 
 const Profile = () => {
-
-
-    // const [colorName, setColorName] = useState(localStorage.getItem('colorName') || '');
-
-
 
     return (
         <div className='Profile row' id='Profile'>
@@ -39,13 +33,8 @@ const Profile = () => {
                         <p className='text-body-md'>محل سکونت : قم</p>
                     </div>
                     <div className='img-text-profile d-none d-md-flex d-lg-none d-xl-flex'>
-                        {/* {colorName === "Light" ?
+                        <img src={Personalprofile2} alt='Personalprofile2' />
 
-                            <img src={Personalprofile2Dark} alt='' />
-                            :
-                            <img src={Personalprofile2Light} alt='' />
-
-                        } */}
                     </div>
                 </div>
             </div>
@@ -67,13 +56,7 @@ const Profile = () => {
                         <p className='text-body-md'>محل سکونت : قم</p>
                     </div>
                     <div className='img-text-profile d-none d-md-flex d-lg-none d-xl-flex'>
-                        {/* {colorName === "Light" ?
-
-                            <img src={Personalprofile1Dark} alt='' />
-                            :
-                            <img src={Personalprofile1Light} alt='' />
-
-                        } */}
+                        <img src={Personalprofile1} alt='Personalprofile1' />
                     </div>
                 </div>
             </div>

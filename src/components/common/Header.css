@@ -97,6 +97,37 @@
   transform: rotate(-100deg);
 }
 
+@media only screen and (min-width: 1300px) {
+
+  .nav-link {
+    font-size: 16px !important;
+  }
+
+  .nav-link svg {
+    width: 18px !important;
+    height: 25px !important;
+    margin: 0 0 0 4px !important;
+  }
+  
+
+}
+
+
+@media only screen and (min-width: 700px) {
+
+  .nav-link {
+    font-size: 25px;
+  }
+
+  .nav-link svg {
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 8px;
+  }
+  
+
+}
+
 /* ---------------------------- */
 
 .navbar-mobile {
