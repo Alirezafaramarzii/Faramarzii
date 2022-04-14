@@ -1,65 +1,66 @@
 .Introduction {
-    margin: 56px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 56px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 /* ----------------------------------- */
 
 .Introduction .text {
-    text-align: justify;
-    margin-top: -50px;
-    z-index: 1;
+  text-align: justify;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+.Introduction .text p {
+  margin: 0 0 16px 0;
 }
 
 .Introduction .text a {
-    color: var(--Purple);
+  color: var(--Purple);
+  cursor: pointer;
+  transition: all 0.3;
+}
+
+.Introduction .text a:hover {
+  color: var(--Purple);
 }
 
 .Introduction .text a svg {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
+  transform: all 0.3;
+  margin: 0 8px 0 0;
 }
-
 
 /* ----------------------------------- */
 
-
 .Introduction .img {
-    position: relative;
-    z-index: -1;
-
+  position: relative;
+  z-index: -1;
 }
 
 .Introduction .img img {
-    width: 400;
-    height: 470px;
+  width: 400;
+  height: 470px;
 }
-
-
 
 .Introduction .img .hide-bottom-img {
-    position: absolute;
-    width: 100%;
-    height: 130px;
-    bottom: -1px;
-    background-color: var(--background-body);
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  bottom: -1px;
+  background-color: var(--background-body);
 }
 
-
 @media only screen and (max-width: 1200px) {
+  .Introduction .img img {
+    width: 320;
+    height: 370px;
+  }
 
-    .Introduction .img img {
-        width: 320;
-        height: 370px;
-    }
-
-
-    .Introduction .img .hide-bottom-img {
-        height: 123px;
-    }
-
-
+  .Introduction .img .hide-bottom-img {
+    height: 123px;
+  }
 }

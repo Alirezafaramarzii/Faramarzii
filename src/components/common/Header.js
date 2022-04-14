@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import "./Header.css";
 
 // img
-import Faramarzi from "../../img/Faramarzi.png";
+import Faramarzi from "../../img/Faramarzi-logo.png";
 
 import { Themes } from '../services/Theme';
 
@@ -45,7 +45,7 @@ const Header = () => {
             <div className='navbar navbar-expand navbar-desktop d-none d-xl-flex' id='#Header'>
                 <div className='navbar-right'>
 
-                    <a className="navbar-brand" href="Header">
+                    <a className="navbar-brand" href="https://faramarzii.ir">
                         <img className='logo' src={Faramarzi} alt="" />
                     </a>
                     <ul className="navbar-nav">
@@ -141,7 +141,7 @@ const Header = () => {
                         </svg>
                     </button>
 
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="https://faramarzii.ir">
                         <img className='logo' src={Faramarzi} alt="" />
                     </a>
 
