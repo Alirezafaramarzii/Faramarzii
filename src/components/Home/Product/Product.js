@@ -3,13 +3,13 @@
 import "./Product.css";
 
 // img
-import image from "../../../img/faramarzi.png";
 import crypto from "../../../img/crypto.png";
-import faramarzi from "../../../img/faramarzi.png";
 import faraz from "../../../img/faraz.png";
 import maherphone from "../../../img/maherphone.png";
 import janebitkoo from "../../../img/janebitkoo.png";
 import ping from "../../../img/ping.png";
+import Faramarzi from "../../../img/Faramarzii.png";
+
 
 
 const Product = () => {
@@ -43,7 +43,7 @@ const Product = () => {
                 <a href="http://faramarzii.ir/" target="_blank" className="d-flex row div-Product">
 
                     <div className="p-0">
-                        <img src={faramarzi} className="img-product" alt="image" />
+                        <img src={Faramarzi} className="img-product" alt="image" />
                     </div>
 
                     <div className="cption">
