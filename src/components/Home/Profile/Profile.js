@@ -7,8 +7,8 @@ import "./Profile.css";
 import af from "../../../img/af.jpg";
 import mmf from "../../../img/mmf.jpg"
 
-import Personalprofile1 from "../../../img/Personalprofile1.png"
-import Personalprofile2 from "../../../img/Personalprofile2.png"
+import Personalprofile2 from "../../../img/Personalprofile1.png"
+import Personalprofile1 from "../../../img/Personalprofile2.png"
 
 
 

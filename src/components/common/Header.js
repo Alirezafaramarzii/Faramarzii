@@ -109,7 +109,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className='btn-mood'>
-                    {colorName == "Light" ?
+                    {colorName === "Light" ?
 
 
                         <button className='Light' onClick={onChangeColorDefault}>
@@ -148,7 +148,7 @@ const Header = () => {
                 </div>
 
                 <div className='btn-mood'>
-                    {colorName == "Light" ?
+                    {colorName === "Light" ?
 
 
                         <button className='Light' onClick={onChangeColorDefault}>
