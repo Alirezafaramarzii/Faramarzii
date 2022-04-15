@@ -1,168 +1,147 @@
 .Profile {
-    margin: 0px;
-    padding-top: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 .Personal-profile {
-    position: relative;
-    width: 100%;
-    height: 310px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #CBCBCB;
-    box-shadow: 0px 7px 15px -9px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-    padding: 60px 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 90px 0 0 0;
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #cbcbcb;
+  box-shadow: 0px 7px 15px -9px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 90px 0 0 0;
+  transition: all 0.3s;
 }
 
-
 @media only screen and (max-width: 1200px) {
-
-    .Personal-profile {
-        height: 300px;
-    }
-
-
+  .Personal-profile {
+    height: 300px;
+  }
 }
 
 .top-profile {
-    position: absolute;
-    top: -60px;
-    right: 50px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  position: absolute;
+  top: -60px;
+  right: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .top-profile img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 2px solid #CBCBCB;
-    box-shadow: 0px 7px 15px -9px rgba(0, 0, 0, 0.25);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #cbcbcb;
+  box-shadow: 0px 7px 15px -9px rgba(0, 0, 0, 0.25);
 }
 
 .top-profile .text {
-    z-index: -1;
-    margin: 0 -60px 20px 0;
-    padding: 12px 80px 12px 30px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #CBCBCB;
-    border-bottom: none;
-    box-shadow: 0px 7px 15px -9px rgba(0, 0, 0, 0.25);
-    border-radius: 16px 0 0 0;
+  z-index: -1;
+  margin: 0 -60px 20px 0;
+  padding: 12px 80px 12px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #cbcbcb;
+  border-bottom: none;
+  box-shadow: 0px 7px 15px -9px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 0 0 0;
 }
 
 .Personal-profile .namad {
-    border-right: 2px solid var(--text-color);
-    height: 100%;
-    width: fit-content;
-    position: relative;
+  border-right: 2px solid var(--text-color);
+  height: 100%;
+  width: fit-content;
+  position: relative;
 }
 
 .Personal-profile .namad span {
-    position: absolute;
-    top: -3px;
-    right: -11px;
-    width: 20px;
-    height: 20px;
-    background-color: var(--text-color);
-    border-radius: 50%;
-    display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: -11px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  display: inline-block;
 }
-
 
 .Personal-profile .text-profile {
-    padding: 0 30px 0 0;
-    text-align: right;
-    height: 100%;
-    width: fit-content;
+  padding: 0 30px 0 0;
+  text-align: right;
+  height: 100%;
+  width: fit-content;
 }
 
-
-
 .Personal-profile .text-profile h4 {
-    margin: 0 0 30px 0;
-    text-align: right;
+  margin: 0 0 30px 0;
+  text-align: right;
 }
 
 .Personal-profile .text-profile p {
-    margin: 10px 0 0 0;
-    text-align: right;
+  margin: 10px 0 0 0;
+  text-align: right;
 }
 
 .img-text-profile {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    top: 0px;
-    left: -300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0px;
+  left: -300px;
 }
 
 .img-text-profile img {
     width: 25%;
 }
 
-
 @media only screen and (max-width: 800px) {
-
-    .profile-div{
-        padding: 0;
-        margin: 0;
-    }
-
-
-
+  .profile-div {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-
-
 @media only screen and (max-width: 500px) {
+  .Personal-profile {
+    padding: 60px 32px;
+    height: 280px;
+  }
 
-    .Personal-profile {
-        padding: 60px 32px;
-        height: 280px;
-    }
+  .top-profile {
+    top: -53px;
+    right: 30px;
+  }
 
-    .top-profile {
-        top: -53px;
-        right: 30px;
-    }
-    
-    .top-profile img {
-        width: 80px;
-        height: 80px;
-    }
-    
-
-
+  .top-profile img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media only screen and (max-width: 325px) {
+  .Personal-profile {
+    padding: 60px 32px;
+    height: 290px;
+  }
 
-    .Personal-profile {
-        padding: 60px 32px;
-        height: 290px;
-    }
+  .top-profile {
+    top: -47px;
+    right: 10px;
+  }
 
-    .top-profile {
-        top: -47px;
-        right: 10px;
-    }
-    
-    .top-profile img {
-        width: 75px;
-        height: 75px;
-    }
-
-
+  .top-profile img {
+    width: 75px;
+    height: 75px;
+  }
 }
