@@ -4,6 +4,8 @@ import "./Slider.css";
 // img
 import alireza from "../../../img/alireza.png";
 import mohamadmahdi from "../../../img/mohamadmahdi.png";
+import aliMohamad from "../../../img/aliMohamad.png";
+
 
 const Slider = () => {
     return (
@@ -18,13 +20,18 @@ const Slider = () => {
                             <div className="carousel-indicators div-dot">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active dot" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" className="dot" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" className="dot" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
                             </div>
-                            <div className="carousel-inner">
+                            <div className="carousel-inner"> 
                                 <div className="carousel-item active">
-                                    <img src={mohamadmahdi} className="d-block slide-img" alt="..." />
+                                    <img src={aliMohamad} className="d-block slide-img" alt="alireza-mohamadmahdiFaramarzi" />
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={alireza} className="d-block slide-img" alt="..." />
+                                <img src={mohamadmahdi} className="d-block slide-img" alt="alirezaFaramarzi" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={alireza} className="d-block slide-img" alt="mohamadmahdiFaramarzi" />
                                 </div>
                             </div>
 
